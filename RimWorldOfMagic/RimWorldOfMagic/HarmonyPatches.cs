@@ -2595,6 +2595,7 @@ namespace TorannMagic
         {
             private static bool Prefix(PawnRenderer __instance, Vector3 rootLoc, float angle, Rot4 facing, ref RotDrawMode bodyDrawType, PawnRenderFlags flags, Pawn ___pawn, out Mesh bodyMesh)
             {
+                // TODO: rotting 1
                 Pawn pawn = ___pawn; // Traverse.Create(root: __instance).Field(name: "pawn").GetValue<Pawn>();
                 ModOptions.SettingsRef settingsRef = new ModOptions.SettingsRef();
                 if (pawn.health.hediffSet.HasHediff(HediffDef.Named("TM_UndeadStageHD")))
@@ -2670,6 +2671,7 @@ namespace TorannMagic
             ModOptions.SettingsRef settingsRef = new ModOptions.SettingsRef();
             if (___pawn.health.hediffSet.HasHediff(HediffDef.Named("TM_UndeadStageHD")))
             {
+                // TODO: rotting 2
                 if (settingsRef.changeUndeadPawnAppearance && ___pawn.health.hediffSet.HasHediff(HediffDef.Named("TM_UndeadHD")))
                 {
                     Hediff hediff = ___pawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("TM_UndeadStageHD"));
@@ -3432,6 +3434,7 @@ namespace TorannMagic
             })]
         public static class DecomposeUndeadOnDeath
         {
+            // NOTE: change here, so no rotting
             public static void Postfix(Pawn __instance, ref Corpse __result)
             {
                 if (__result != null && __result.InnerPawn != null && __result.InnerPawn.health != null && __result.InnerPawn.health.hediffSet != null && __result.InnerPawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_UndeadStageHD))
@@ -3440,7 +3443,7 @@ namespace TorannMagic
                     Hediff hd = __result.InnerPawn.health.hediffSet.GetFirstHediffOfDef(TorannMagicDefOf.TM_UndeadStageHD);
                     if (cr != null && hd != null)
                     {
-                        cr.RotImmediately();
+                        // cr.RotImmediately();
                     }
                 }
             }
