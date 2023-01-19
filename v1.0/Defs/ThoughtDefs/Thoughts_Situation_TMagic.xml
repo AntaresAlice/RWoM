@@ -11,7 +11,7 @@
     <stages>
       <li>
         <label>undead</label>
-        <baseOpinionOffset>-40</baseOpinionOffset>
+        <baseOpinionOffset>10</baseOpinionOffset>
       </li>
     </stages>
   </ThoughtDef>
