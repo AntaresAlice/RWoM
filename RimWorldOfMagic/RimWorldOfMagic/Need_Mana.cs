@@ -571,10 +571,10 @@ namespace TorannMagic
         public void UseMagicPower(float amount)
         {
             this.curLevelInt = Mathf.Clamp(this.curLevelInt - amount, 0f, 2f*this.pawn.GetCompAbilityUserMagic().maxMP);
-            if ((amount) > .25f && (amount) < .45f)
+            if ((amount) > .35f && (amount) < .55f)
             {
                 //0.0 to 0.2 max
-                float sev = ((amount - .25f) * 10);
+                float sev = ((amount - .35f) * 10);
                 if(pawn.story != null && pawn.story.traits != null)
                 {
                     if (pawn.story.traits.HasTrait(TorannMagicDefOf.TM_EnlightenedTD))
@@ -588,10 +588,10 @@ namespace TorannMagic
                 }
                 HealthUtility.AdjustSeverity(pawn, TorannMagicDefOf.TM_ArcaneWeakness, sev);
             }
-            else if ((amount) >= .45f && (amount) < .79f)
+            else if ((amount) >= .55f && (amount) < .89f)
             {
                 //0.0 to 0.34 max
-                float sev = 2f + ((amount - .45f) * 30);
+                float sev = 2f + ((amount - .55f) * 30);
                 if (pawn.story != null && pawn.story.traits != null)
                 {
                     if (pawn.story.traits.HasTrait(TorannMagicDefOf.TM_EnlightenedTD))
@@ -605,7 +605,7 @@ namespace TorannMagic
                 }
                 HealthUtility.AdjustSeverity(pawn, TorannMagicDefOf.TM_ArcaneWeakness, sev);
             }
-            else if ((amount) >= .79f && (amount) < 5)
+            else if ((amount) >= .89f && (amount) < 5)
             {
                 //0.0 to x.x 
                 float sev = 12.5f + ((amount - .79f) * 75);              
