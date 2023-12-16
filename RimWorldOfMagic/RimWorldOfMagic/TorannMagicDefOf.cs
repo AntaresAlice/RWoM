@@ -3,7 +3,6 @@ using RimWorld;
 using Verse;
 using AbilityUser;
 
-
 namespace TorannMagic
 {
 	[DefOf]
@@ -1599,6 +1598,9 @@ namespace TorannMagic
         public static HistoryEventDef TM_SeverMagicEvent;
         public static HistoryEventDef TM_BestowMagicEvent;
         public static HistoryEventDef TM_BestowClassEvent;
+
+        //Gene's
+        //public static GeneDef Ageless;  //can't use, error if biotech is not installed (non-existent def)
 
         //Rituals
         public static JobDef TM_SeverMagic;
