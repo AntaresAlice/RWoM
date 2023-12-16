@@ -2,5 +2,4 @@ RimWorldOfMagic/.vs
 .suoRimWorldOfMagic/RimWorldOfMagic/obj/Debug/*
 .vs
 RimWorldOfMagic/RimWorldOfMagic/obj/*
-v1.4/Assemblies/TorannMagic.dll
-v1.4/Assemblies/TorannMagic.pdb
+*/Assemblies/*
