@@ -4421,6 +4421,7 @@ namespace TorannMagic
             })]
         public static class DecomposeUndeadOnDeath
         {
+            // NOTE: change here, so no rotting
             public static void Postfix(Pawn __instance, ref Corpse __result)
             {
                 if (__result != null && __result.InnerPawn != null && __result.InnerPawn.health != null && __result.InnerPawn.health.hediffSet != null && __result.InnerPawn.health.hediffSet.HasHediff(TorannMagicDefOf.TM_UndeadStageHD))
@@ -4429,7 +4430,7 @@ namespace TorannMagic
                     Hediff hd = __result.InnerPawn.health.hediffSet.GetFirstHediffOfDef(TorannMagicDefOf.TM_UndeadStageHD);
                     if (cr != null && hd != null)
                     {
-                        cr.RotImmediately();
+                        // cr.RotImmediately();
                     }
                 }
             }
@@ -5913,14 +5914,6 @@ namespace TorannMagic
                     }
                 }
 
-                if (patient.health.hediffSet.HasHediff(HediffDef.Named("TM_UndeadHD")) || patient.health.hediffSet.HasHediff(HediffDef.Named("TM_UndeadAnimalHD")))
-                {
-                    Messages.Message("Something went horribly wrong while trying to perform a surgery on " + patient.LabelShort + ", perhaps it's best to leave the bodies of the undead alone.", MessageTypeDefOf.NegativeHealthEvent);
-                    GenExplosion.DoExplosion(surgeon.Position, surgeon.Map, 2f, TMDamageDefOf.DamageDefOf.TM_CorpseExplosion, patient, Rand.Range(6, 12), 10, TMDamageDefOf.DamageDefOf.TM_CorpseExplosion.soundExplosion, null, null, null, null, 0, 0, null, null, 0, false, null, 0, 0, 0, false);
-                    __result = true;
-                    return false;
-                }
-
                 return true;
 
             }
@@ -6031,6 +6024,7 @@ namespace TorannMagic
         {
             private static bool Prefix(Pawn_SkillTracker __instance, Pawn ___pawn)
             {
+                return true;
                 if (___pawn?.story?.traits != null)
                 {
                     if (___pawn.story.traits.HasTrait(TorannMagicDefOf.Undead))
@@ -6047,6 +6041,7 @@ namespace TorannMagic
         {
             private static bool Prefix(SkillRecord __instance, Pawn ___pawn)
             {
+                return true;
                 if (___pawn != null)
                 {
                     if (___pawn.story.traits.HasTrait(TorannMagicDefOf.Undead))

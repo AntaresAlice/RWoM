@@ -4,10 +4,7 @@
   <!-- Raise Undead -->
 
   <TM_RaiseUndead.label>死者苏生</TM_RaiseUndead.label>
-  <TM_RaiseUndead.description>将生物的尸体复活为不死者。不死者会一直受制于死灵法师.
-但是控制每一个不死人都需要死灵法师降低30%的基础魔法回复速度作为代价。维持不死动物只花费15%.
-死灵法师可以控制的不死者没有上限，但当当死灵法师没有足够的法力维持它们时，失去控制的不死者会被解散.
-</TM_RaiseUndead.description>
+  <TM_RaiseUndead.description>将生物的尸体复活为不死者。不死者会一直受制于死灵法师.但是控制每一个不死人都需要死灵法师降低30%的基础魔法回复速度作为代价。维持不死动物只花费15%.死灵法师可以控制的不死者没有上限，但当当死灵法师没有足够的法力维持它们时，失去控制的不死者会被解散.</TM_RaiseUndead.description>
 
   <TM_DismissUndead.label>解散所有不死者</TM_DismissUndead.label>
   <TM_DismissUndead.description>解散一名不死者。</TM_DismissUndead.description>

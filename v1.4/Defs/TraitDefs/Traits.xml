@@ -172,11 +172,8 @@
 		<ignoreConfigErrors>true</ignoreConfigErrors>
 		<commonality>0</commonality>	
 		<disabledWorkTags> 
-			<li>Caring</li>
 			<li>Social</li>
 			<li>Animals</li>
-			<li>Artistic</li>
-			<li>Intellectual</li>
 		</disabledWorkTags>
 		<degreeDatas>	
 		  <li>
@@ -184,14 +181,14 @@
 			<description>[PAWN_nameDef] has been reanimated as an undead.</description>
 			<degree>0</degree>
 			<statOffsets>
-				<MoveSpeed>-2</MoveSpeed>
+				<MoveSpeed>0.50</MoveSpeed>
 				<ComfyTemperatureMin>-66</ComfyTemperatureMin>
 				<ComfyTemperatureMax>58</ComfyTemperatureMax>
 				<ToxicResistance>1</ToxicResistance>
 				<ImmunityGainSpeed>49</ImmunityGainSpeed>
 				<PainShockThreshold>0.90</PainShockThreshold>
 				<NegotiationAbility>-0.7</NegotiationAbility>
-				<WorkSpeedGlobal>-0.50</WorkSpeedGlobal>
+				<WorkSpeedGlobal>0.50</WorkSpeedGlobal>
 			</statOffsets>
 			<statFactors>
 				<ForagedNutritionPerDay>0</ForagedNutritionPerDay>
