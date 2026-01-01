@@ -389,9 +389,9 @@ namespace TorannMagic
                                           where bs != null
                                           select bs)
             {
-                foreach (KeyValuePair<SkillDef, int> skillGain in item.skillGains)
+                foreach (SkillGain skillGain in item.skillGains)
                 {
-                    undeadPawn.skills.GetSkill(skillGain.Key).Level += skillGain.Value;                  
+                    undeadPawn.skills.GetSkill(skillGain.skill).Level += skillGain.amount;
                 }
             }
 
@@ -481,17 +481,6 @@ namespace TorannMagic
                     else
                     {
                         undeadPawn.workSettings.SetPriority(WorkTypeDefOf.Mining, 0);
-                    }
-                }
-                else if (s.def == SkillDefOf.Artistic && !undeadPawn.WorkTypeIsDisabled(WorkTypeDefOf.Art))
-                {
-                    if (s.Level > 7 || (s.Level >= 6 && s.passion != Passion.None))
-                    {
-                        undeadPawn.workSettings.SetPriority(WorkTypeDefOf.Art, 3);
-                    }
-                    else
-                    {
-                        undeadPawn.workSettings.SetPriority(WorkTypeDefOf.Art, 0);
                     }
                 }
                 else if (s.def == SkillDefOf.Medicine && !undeadPawn.WorkTypeIsDisabled(WorkTypeDefOf.Doctor))

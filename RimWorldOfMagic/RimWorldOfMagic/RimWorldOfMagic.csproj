@@ -37,12 +37,12 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="AbilityUser">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2195729899\1.4\Assemblies\AbilityUser.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\3312959701\1.6\Assemblies\AbilityUser.dll</HintPath>
+            <Private>False</Private>
     </Reference>
     <Reference Include="AbilityUserAI">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2195729899\1.4\Assemblies\AbilityUserAI.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\3312959701\1.6\Assemblies\AbilityUserAI.dll</HintPath>
+            <Private>False</Private>
     </Reference>
     <Reference Include="AlienRace">
       <HintPath>..\..\..\..\..\..\workshop\content\294100\839005762\1.4\Assemblies\AlienRace.dll</HintPath>
@@ -53,13 +53,13 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="CompDeflector">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2195729899\1.4\Assemblies\CompDeflector.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\3312959701\1.6\Assemblies\CompDeflector.dll</HintPath>
+            <Private>False</Private>
+</Reference>
     <Reference Include="GiddyUpCore">
       <HintPath>..\..\..\..\..\..\workshop\content\294100\1216999901\1.4\Assemblies\GiddyUpCore.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+            <Private>False</Private>
+          </Reference>
     <Reference Include="HarmonyMod">
       <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\HarmonyMod.dll</HintPath>
       <Private>False</Private>
@@ -70,7 +70,7 @@
     </Reference>
     <Reference Include="SimpleSidearms">
       <HintPath>..\..\..\..\..\..\workshop\content\294100\927155256\v1.4\Assemblies\SimpleSidearms.dll</HintPath>
-      <Private>False</Private>
+            <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
